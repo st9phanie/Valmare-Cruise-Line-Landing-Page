@@ -34,3 +34,11 @@ header {
   font-weight: 500;
 }
 
+button {
+  cursor: pointer;
+}
+
+p {
+  text-shadow: h-shadow v-shadow blur-radius color;
+
+}
