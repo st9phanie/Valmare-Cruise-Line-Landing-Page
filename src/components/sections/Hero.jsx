@@ -2,11 +2,12 @@ import pic1 from "../../assets/pic1.jpg";
 
 export const Hero = () => {
     return (
+        <section id="#">
         <div className="relative w-full min-h-[600px] flex items-center justify-start overflow-hidden lg:-top-10 ">
             {/* Background Image */}
             <img
                 src={pic1}
-                alt="Hero section image, Maldives"
+                alt="Hero section image"
                 className="absolute inset-0 w-full h-full object-cover z-0"
             />
 
@@ -30,5 +31,6 @@ export const Hero = () => {
                 </button>
             </div>
         </div>
+        </section>
     );
 };

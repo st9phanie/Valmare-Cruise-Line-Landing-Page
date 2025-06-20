@@ -4,7 +4,7 @@ import med from '../../assets/med.jpg';
 
 export const Featured = () => {
     return (
-        <section>
+        <section className=''>
         <div className="px-6 lg:px-32 py-16">
             <h1 className="text-4xl didot tracking-[1px] text-center">FEATURED</h1>
 

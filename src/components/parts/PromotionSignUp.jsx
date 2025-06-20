@@ -9,7 +9,7 @@ export const PromotionSignUp = () => {
             </div>
             <div className="flex w-1/2 min-w-max">
                 <input type="email" placeholder="YOUR EMAIL ADDRESS" className="bg-white px-4 outline-none py-2 w-full" />
-                <button className="text-white border-2 border-[#c9a14a] px-4 min-w-max bg-[#c9a14a] font-semibold">SIGN UP</button>
+                <button className="text-white border-2 border-[#c9a14a] px-4 py-2 min-w-max bg-[#c9a14a] font-semibold cursor-pointer hover:bg-[#b88d52] transition duration-300 hover:border-[#b88d52]">SIGN UP</button>
                 </div>
 
         </div>
