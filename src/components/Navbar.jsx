@@ -3,6 +3,8 @@ import { useState } from "react";
 
 export const Navbar = () => {
     const navitems1 = [
+        { href: "#", text: "HOME" },
+
         { href: "#", text: "FIND A CRUISE" },
         { href: "#", text: "DESTINATIONS" },
     ];
@@ -19,32 +21,28 @@ export const Navbar = () => {
 
             <div className="lg:px-32 lg:py-4 lg:w-full lg:flex hidden">
 
-                <nav className="flex items-center justify-between relative w-full ">
-                    <ul className="flex gap-x-12  tracking-[0.8px] montserrat-regular items-center">
-                        <a href="#">
-
-                            <li className="text-[13px] flex flex-row gap-x-1/2 items-center font-semibold hover:underline">
-                                {/*   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="30" viewBox="0 0 72 72"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M16 26h40M16 36h40M16 46h40" /></svg>
-                                    MENU */}
-                                HOME
-                            </li></a>
-                        {navitems1.map((item, key) => (
+                <nav className="flex items-center justify-between relative w-full">
+                    <div className="flex gap-x-12 flex-1 justify-start">
+                        <ul className="flex gap-x-12  tracking-[0.8px] montserrat-regular items-center">
+                        {/* Left Nav */}
+                       {navitems1.map((item, key) => (
                             <li className="text-[13px] hover:underline font-semibold" key={key}>
                                 <a href={item.href}>{item.text}</a>
                             </li>
                         ))}
                     </ul>
+                    </div>
 
-                    {/* LOGO */}
-                    <li className="list-none items-center flex ">
-                        <div className=" flex flex-col">
-                            <a href="#" className="">
+                    <div className="flex flex-col items-center flex-shrink-0">
+                        {/* Center Logo */}
+                        <a href="#">
+                            <p className="text-4xl carattere-regular tracking-[2px]">Valmare</p>
+                            <p className="text-[11px] montserrat-regular">SEVEN SEAS CRUISES</p>
+                        </a>
+                    </div>
 
-                                <p id="" className="text-4xl carattere-regular tracking-[2px]">Valmare</p>
-                                <p className="text-[11px] montserrat-regular">SEVEN SEAS CRUISES</p></a>
-                        </div></li>
-
-                    <ul className="flex gap-x-12  tracking-[0.8px] montserrat-regular items-center">
+                    <div className="flex gap-x-12 flex-1 justify-end">
+                         <ul className="flex gap-x-12  tracking-[0.8px] montserrat-regular items-center">
 
                         {navitems2.map((item, key) => (
                             <li className="text-[13px] hover:underline font-semibold" key={key}>
@@ -58,7 +56,9 @@ export const Navbar = () => {
 
                         </li>
                     </ul>
+                    </div>
                 </nav>
+
             </div>
 
             <div className="lg:hidden flex px-10 justify-between w-full items-center ">
