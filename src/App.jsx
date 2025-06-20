@@ -6,20 +6,23 @@ import { Featured } from './components/sections/Featured'
 import { Hero } from './components/sections/Hero'
 import { Offers } from './components/sections/Offers'
 import { WhyUs } from './components/sections/WhyUs'
+import { Footer } from './components/Footer'
 
 function App() {
 
   return (
-    <>
-     <Navbar />
-     <Hero />
-     <Search />
-     <Featured />
-    <Offers />
-    <PromotionSignUp />
-    <Destinations />
-    <WhyUs />
-    </>
+    <div className="justify-center flex flex-col">
+      <Navbar />
+      <Hero />
+      <Search />
+      <Featured />
+      <Offers />
+      <PromotionSignUp />
+      <Destinations />
+      <WhyUs />
+      <Footer />
+    </div>
+
   )
 }
 

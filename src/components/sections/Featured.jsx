@@ -5,12 +5,12 @@ import med from '../../assets/med.jpg';
 export const Featured = () => {
     return (
         <section className=''>
-        <div className="px-6 lg:px-32 py-16">
+        <div className="px-6 lg:px-32 lg:py-16">
             <h1 className="text-4xl didot tracking-[1px] text-center">FEATURED</h1>
 
-            <div className="flex flex-col lg:flex-row mt-10 gap-6 lg:gap-x-10 w-full justify-center  montserrat-regular cursor-pointer">
+            <div className="flex flex-col lg:flex-row mt-10 gap-6 lg:gap-x-10 w-full justify-center montserrat-regular cursor-pointer">
                 {/* Caribbean Dreams */}
-                <div className="relative w-full lg:w-1/3 shadow-sm overflow-hidden group">
+                <div className="relative w-full lg:max-h-max max-h-[250px] lg:w-1/3 shadow-sm overflow-hidden group">
                     <img src={crb} alt="Caribbean" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-black/25 group-hover:bg-black/50 transition duration-300" />
                     <div className="absolute bottom-6 left-6 text-white z-10">
@@ -23,7 +23,7 @@ export const Featured = () => {
                 </div>
 
                 {/* Antarctic Expedition */}
-                <div className="relative w-full lg:w-1/3 shadow-sm overflow-hidden group">
+                <div className="relative w-full lg:max-h-max  max-h-[250px] lg:w-1/3 shadow-sm overflow-hidden group">
                     <img src={ant} alt="Antarctic" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300" />
                     <div className="absolute bottom-6 left-6 text-white z-10">
@@ -36,7 +36,7 @@ export const Featured = () => {
                 </div>
 
                 {/* Mediterranean Voyage */}
-                <div className="relative w-full lg:w-1/3 shadow-sm overflow-hidden group">
+                <div className="relative lg:max-h-max w-full lg:w-1/3 max-h-[250px] shadow-sm overflow-hidden group">
                     <img src={med} alt="Mediterranean" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300" />
                     <div className="absolute bottom-6 left-6 text-white z-10">
