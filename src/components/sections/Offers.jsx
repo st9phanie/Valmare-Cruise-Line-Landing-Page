@@ -14,7 +14,7 @@ export const Offers = () => {
             <div className="flex flex-col lg:flex-row mt-10 gap-6 lg:gap-x-10 w-full justify-center  montserrat-regular cursor-pointer">
                 {/* 2 for 1 */}
                 <div className="relative w-full lg:max-h-max  max-h-[250px] lg:w-1/3 shadow-sm overflow-hidden group">
-                    <img src={date} alt="Caribbean" className="w-full h-full object-cover" />
+                    <img src={date} alt="Caribbean" className="w-full h-full object-cover"   loading="lazy" />
                     <div className="absolute inset-0 bg-black/25 group-hover:bg-black/50 transition duration-300" />
                     <div className="absolute bottom-6 px-6 text-white z-10">
                         <h2 className="text-xl font-semibold">Limited-Time 2-for-1 Fares</h2>
@@ -27,7 +27,7 @@ export const Offers = () => {
 
                 {/* Valmare Society Savings */}
                 <div className="relative w-full lg:max-h-max  max-h-[250px] lg:w-1/3 shadow-sm overflow-hidden group">
-                    <img src={ppl} alt="Antarctic" className="w-full h-full object-cover" />
+                    <img src={ppl} alt="Antarctic"   loading="lazy" className="w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300" />
                     <div className="absolute bottom-6 left-6 text-white z-10">
                         <h2 className="text-xl font-semibold">Valmare Society Savings</h2>
@@ -40,7 +40,7 @@ export const Offers = () => {
 
                 {/* Solo Travellers*/}
                 <div className="relative lg:max-h-max  max-h-[250px] w-full lg:w-1/3 shadow-sm overflow-hidden group">
-                    <img src={solo} alt="Mediterranean" className="w-full lg:h-full h-[250px] object-cover" />
+                    <img src={solo}   loading="lazy" alt="Mediterranean" className="w-full lg:h-full h-[250px] object-cover" />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300" />
                     <div className="absolute bottom-6 left-6 text-white z-10">
                         <h2 className="text-xl font-semibold">Solo Travellers</h2>

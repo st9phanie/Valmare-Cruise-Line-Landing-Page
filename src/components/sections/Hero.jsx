@@ -40,6 +40,8 @@ export const Hero = () => {
                     src={pic2}
                     alt="Hero section image"
                     className="absolute inset-0 w-full h-full object-cover z-0"
+                      loading="lazy"
+
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-r from-black/35 to-transparent z-10 pointer-events-none" />

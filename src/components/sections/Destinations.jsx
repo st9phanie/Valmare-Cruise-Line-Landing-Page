@@ -17,12 +17,12 @@ import afr from '../../assets/afr.jpg';
 export const Destinations = () => {
 
     const slides = [
-        { title: "GALÁPAGOS ISLANDS", image: galapagos, desc:"Discover the enchanting Galápagos Islands, where untouched nature, rare wildlife, and dramatic volcanic landscapes create a once-in-a-lifetime expedition"},
-        { title: "MEDITERRANEAN", image:mediterranean,desc:"Sail through the sun-kissed Mediterranean, where timeless coastal cities, vibrant cultures, and crystal-clear waters offer an unforgettable journey of elegance and history" },
-        { title: "ARCTIC", image:arctic,desc:"Embark on a breathtaking Arctic journey where towering glaciers, elusive wildlife, and the mesmerizing dance of the Northern Lights illuminate a truly unforgettable expedition" },
-        { title: "NORTHERN EUROPE & THE BRITISH ISLES", image:bi,desc:"Discover the charm of cobblestone streets, dramatic fjords, and timeless castles on a breathtaking cruise through Northern Europe and the British Isles" },
-        { title: "ANTARCTICA", image:ant,desc:"Embark on the ultimate adventure to Antarctica, where towering icebergs, pristine wilderness, and unforgettable wildlife encounters await at the edge of the world." },
-        { title: "AFRICA", image:afr,desc:"Experience the vibrant heart of Africa, where stunning landscapes, iconic wildlife safaris, and rich cultural heritage create a journey like no other." },
+        { title: "GALÁPAGOS ISLANDS", image: galapagos, desc: "Discover the enchanting Galápagos Islands, where untouched nature, rare wildlife, and dramatic volcanic landscapes create a once-in-a-lifetime expedition" },
+        { title: "MEDITERRANEAN", image: mediterranean, desc: "Sail through the sun-kissed Mediterranean, where timeless coastal cities, vibrant cultures, and crystal-clear waters offer an unforgettable journey of elegance and history" },
+        { title: "ARCTIC", image: arctic, desc: "Embark on a breathtaking Arctic journey where towering glaciers, elusive wildlife, and the mesmerizing dance of the Northern Lights illuminate a truly unforgettable expedition" },
+        { title: "NORTHERN EUROPE & THE BRITISH ISLES", image: bi, desc: "Discover the charm of cobblestone streets, dramatic fjords, and timeless castles on a breathtaking cruise through Northern Europe and the British Isles" },
+        { title: "ANTARCTICA", image: ant, desc: "Embark on the ultimate adventure to Antarctica, where towering icebergs, pristine wilderness, and unforgettable wildlife encounters await at the edge of the world." },
+        { title: "AFRICA", image: afr, desc: "Experience the vibrant heart of Africa, where stunning landscapes, iconic wildlife safaris, and rich cultural heritage create a journey like no other." },
 
     ];
 
@@ -55,7 +55,9 @@ export const Destinations = () => {
                                     <img
                                         src={slide.image}
                                         alt={slide.title}
-                                        className="w-full h-[250px] lg:h-[450px] object-cover"
+                                        loading="lazy"
+
+                                        className="w-full h-[250px] lg:h-[450px] object-cover "
                                     />                                </div>
 
                                 <div className=" py-6 text-center">

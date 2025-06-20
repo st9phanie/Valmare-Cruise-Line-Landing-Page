@@ -64,7 +64,7 @@ export const WhyUs = () => {
             </div>
 
             {/* MOBILE */}
-             <div className="px-6 block lg:hidden py-8">
+            <div className="px-6 block lg:hidden py-8">
                 <div>
                     <h1 className="montserrat-regular didot text-4xl">Why Valmare?</h1>
                 </div>
@@ -86,6 +86,8 @@ export const WhyUs = () => {
                                         src={slide.image}
                                         className="w-full h-[250px] object-cover "
                                         alt={slide.title}
+                                        loading="lazy"
+
                                     />
                                     <div className="absolute inset-0 flex flex-col justify-end  text-white">
                                         <div className=' bg-black/40 p-6'>
