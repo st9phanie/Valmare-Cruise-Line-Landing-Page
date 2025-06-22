@@ -1,8 +1,7 @@
-import food from '../../assets/food.jpg'
-import service from '../../assets/service.jpg'
-import suite from '../../assets/suite.jpg'
+import food from '../../assets/test.jpg'
+import service from '../../assets/serv.jpg'
+import suite from '../../assets/room.jpg'
 import comp from '../../assets/comp.jpg'
-import int from '../../assets/int.jpeg'
 
 
 
@@ -19,16 +18,15 @@ export const WhyUs = () => {
         { title: "Exceptional Service", image: service, desc: "Enjoy attentive, personalized service that makes you feel truly at home at sea" },
         { title: "Complimentary Luxuries", image: comp, desc: "From fine dining to onboard experiences — enjoy a range of inclusions at no extra cost" },
         { title: "Luxurious Suites", image: suite, desc: "Relax in spacious, elegantly designed suites with breathtaking ocean views" },
-        { title: "Private Yacht Atmosphere", image: int, desc: "Savor the intimacy of a private yacht with all the benefits of a premium cruise" },
 
     ];
 
     return (
-        <section className="bg-white montserrat-regular">
+        <section className=" font-[Beautifully_Delicious]">
             {/* DESKTOP */}
             <div className="px-6 lg:px-32 py-16 lg:block hidden">
                 <div>
-                    <h1 className="montserrat-regular didot text-4xl">Why Valmare?</h1>
+                    <h1 className="text-5xl text-center font-[The_Seasons]">Why Valmare?</h1>
                 </div>
                 <div className="py-16 ">
                     <Swiper

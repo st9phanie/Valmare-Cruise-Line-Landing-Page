@@ -1,6 +1,8 @@
+
 @import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=GFS+Didot&family=SUSE:wght@100..800&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -9,10 +11,24 @@
   --swiper-navigation-color: #c9a14a;
 }
 
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;}
+
+  
+@font-face {
+  font-family: 'Beautifully Delicious';
+  src:   url('/fonts/BDSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin:0;
   padding: 0;
+  background-color: #edf8ff;
 }
 
 header {
@@ -33,6 +49,9 @@ header {
   font-style: normal;
 }
 
+
+
+
 .didot {
   font-family: "GFS Didot", serif;
   font-style: normal;
@@ -42,16 +61,17 @@ button {
   cursor: pointer;
 }
 
-.swiper-slide-active {
-    opacity: 1;
-    z-index: 1;
-    scale:1.1;
-    
-
-  }
 @media (min-width: 1024px) {
   .swiper-slide-next {
     padding-left: 50px;
+  }
+
+    .swiper-slide-next h3, .swiper-slide-prev h3  {
+    background-color: transparent;
+    display: hidden;
+  }
+
+   .swiper-slide-next div, .swiper-slide-prev div  {
   }
 
   .swiper-slide-prev {
@@ -78,7 +98,6 @@ button {
     fill: black !important;
     stroke: black !important;
     display: flex;
-  transform: translateY(0%);
   width: 64px; /* overall size */
   height: 64px;
   }

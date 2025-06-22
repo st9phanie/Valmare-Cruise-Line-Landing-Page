@@ -29,13 +29,13 @@ export const company = [
 
 export const Footer = () => {
     return (
-        <div className="bg-black flex flex-col " >
-            <footer className="px-6 lg:px-32 py-16 w-full text-white montserrat-regular flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:gap-x-8 justify-between">
+        <div className="bg-[#051822] flex flex-col " >
+            <footer className="px-6 lg:px-32 py-16 w-full text-white font-[Beautifully_Delicious] flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:gap-x-8 justify-between">
                 {/* PLAN A CRUISE */}
                 <div className="w-full lg:w-1/4">
                     <ul className="flex flex-col gap-y-4">
                         <div className="flex flex-col">
-                            <p className="didot text-baseline">PLAN A CRUISE</p>
+                            <p className="font-[The_Seasons] text-baseline">PLAN A CRUISE</p>
                             <hr className="border-white" />
                         </div>
                         {pac.map((plan, key) => (
@@ -50,7 +50,7 @@ export const Footer = () => {
                 <div className="w-full lg:w-1/4">
                     <ul className="flex flex-col gap-y-4">
                         <div className="flex flex-col">
-                            <p className="didot text-baseline">RESOURCES</p>
+                            <p className="font-[The_Seasons] text-baseline">RESOURCES</p>
                             <hr className="border-white" />
                         </div>
                         {resources.map((res, key) => (
@@ -65,7 +65,7 @@ export const Footer = () => {
                 <div className="w-full lg:w-1/4">
                     <ul className="flex flex-col gap-y-4">
                         <div className="flex flex-col">
-                            <p className="didot text-baseline">COMPANY INFORMATION</p>
+                            <p className="font-[The_Seasons] text-baseline">COMPANY INFORMATION</p>
                             <hr className="border-white" />
                         </div>
                         {company.map((com, key) => (
@@ -79,7 +79,7 @@ export const Footer = () => {
                 {/* SOCIAL MEDIA */}
                 <div className="w-full lg:w-1/4">
                     <div className="flex flex-col">
-                        <p className="didot text-baseline">FOLLOW US</p>
+                        <p className="font-[The_Seasons] text-baseline">FOLLOW US</p>
                         <hr className="border-white" />
                     </div>
 
@@ -115,7 +115,7 @@ export const Footer = () => {
             </footer>
            
             <div>
-                <p className="text-xs text-[#ddd] py-4 text-center bg-[#111] px-6 montserrat-regular">© 2025 Valmare Cruises Ltd. All Rights Reserved. See Terms and Conditions and Privacy Policy. Enable Accessibility</p>
+                <p className="text-xs text-[#ddd] py-4 text-center bg-[#011] px-6 font-[Beautifully_Delicious]">© 2025 Valmare Cruises Ltd. All Rights Reserved. See Terms & Conditions and Privacy Policy.</p>
             </div>
         </div>
     );
